@@ -2,7 +2,7 @@
 public class Caneta {
 	public String modelo;
 	public String cor;
-	private float ponta;
+	float ponta;
 	protected int carga;
 	private boolean tampada;
 	

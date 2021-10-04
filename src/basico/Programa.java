@@ -4,9 +4,21 @@ public class Programa {
 
 	public static void main(String[] args) {
 		//criando conta
-		Conta minhaConta;
-		minhaConta = new Conta();
+		Conta minhaConta = new Conta();
 		
+		Cliente cliente = new Cliente();
+		
+		
+		/*
+		Cliente clienteDaMinhaConta = minhaConta.titular;
+		clienteDaMinhaConta.nome = "Duke";*/
+		
+		minhaConta.titular.nome="Wilson";
+	    System.out.println(minhaConta.titular.nome);
+		
+		
+		
+		/*
 		//alterando os valores de minhaConta
 		minhaConta.titular = "Duke";
 		minhaConta.saldo = 1000;
@@ -23,6 +35,9 @@ public class Programa {
 		minhaConta.deposita(500);
 		
 		System.out.println("Saldo atual : "+minhaConta.saldo);
+		*/
+		
+		
 		
 		
 		

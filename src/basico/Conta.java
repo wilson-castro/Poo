@@ -2,7 +2,7 @@ package basico;
 
 public class Conta {
 	int numero;
-	String titular;
+	Cliente titular = new Cliente();
 	double saldo;
 	double salario;
 	
@@ -25,6 +25,23 @@ public class Conta {
 	void deposita(double quantidade) {
 		this.saldo += quantidade;
 	}
+	
+	boolean transferePara(Conta destino, double valor) {
+		boolean retirou = this.saca(valor);
+		if (!retirou) {
+			//impossivel transferir
+			return false;
+		}else {
+			//sera atribuida uma nova referencia ao objeto destino que
+			//e a conta que via receber o dinheiro
+			destino.saldo = destino.saldo +valor;
+			return true;
+		}
+		
+		
+		
+	}
+	
 	
 	
 }

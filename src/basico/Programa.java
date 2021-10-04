@@ -9,9 +9,9 @@ public class Programa {
 		Cliente cliente = new Cliente();
 		
 		
-		/*
+		
 		Cliente clienteDaMinhaConta = minhaConta.titular;
-		clienteDaMinhaConta.nome = "Duke";*/
+		clienteDaMinhaConta.nome = "Duke";
 		
 		minhaConta.titular.nome="Wilson";
 	    System.out.println(minhaConta.titular.nome);

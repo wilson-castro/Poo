@@ -17,7 +17,7 @@ public class Conta {
 	   this.saldo = this.saldo + valor;
    }
     
-    double calculaRendimento() {
+    double getRendimento() {
     	return this.saldo*0.1;
     }
     
